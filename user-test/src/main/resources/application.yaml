@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/usertest
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+session:
+  provider:
+    url: http://localhost:8082/session
+    enabled: true
+    black-list:
+      - Tom
+      - John
+    black-list-providers:
+      - com.example.user-test.config.UserBlackListProvider

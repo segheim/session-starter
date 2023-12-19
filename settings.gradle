@@ -1,0 +1,4 @@
+rootProject.name = 'session-starter'
+include 'session'
+include 'starter'
+include 'user-test'
